@@ -1,20 +1,20 @@
 /**
  * Accessible Drop Caps
  * @version 1.0.0
- * @link
+ * @link https://github.com/danielhaim1/dropcaps
  * @example https://codepen.io/danielhaim/pen/poLgNrx
  * 
  * @param [node] {object} - The DOM node to apply the drop cap to
  * @retun {object} - The DOM node with the drop cap applied
  * @return {null} - If the text has no first paragraph, or the first letter is not a letter.
  * 
- * https://www.w3.org/WAI/tutorials/page-structure/headings/#dropcaps
- * https://adrianroselli.com/2019/10/accessible-drop-caps.html
- * https://product.voxmedia.com/2019/6/17/18524029/the-ballad-of-drop-caps-and-design-systems
- * https://www.youtube.com/watch?v=nt7p3CuxUzA
+ * @link https://www.w3.org/WAI/tutorials/page-structure/headings/#dropcaps
+ * @link https://adrianroselli.com/2019/10/accessible-drop-caps.html
+ * @link https://product.voxmedia.com/2019/6/17/18524029/the-ballad-of-drop-caps-and-design-systems
+ * @link https://www.youtube.com/watch?v=nt7p3CuxUzA
  */
 
-const dropcap = (() => {
+ const dropcap = (() => {
     const node = document.querySelector("p[data-dropcap]");
 
     if (node) {
