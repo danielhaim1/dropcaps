@@ -14,7 +14,7 @@
  * @link https://www.youtube.com/watch?v=nt7p3CuxUzA
  */
 
- const dropcap = (() => {
+const dropcap = (() => {
     const node = document.querySelector("p[data-dropcap]");
 
     if (node) {
@@ -37,8 +37,6 @@
         let firstWord = node.querySelector(".dropcap").textContent; // get the first word of the paragraph.
         let firstLetter = firstWord.charAt(0); // get the first letter of the first word.
         let restOfWord = firstWord.slice(1); // get the rest of the letters of the first word.
-
-        console.log(firstLetter, restOfWord);
 
         // check if the firstLetter is a letter, number, or symbol.
         if (firstLetter.match(/[a-z]/i)) {
